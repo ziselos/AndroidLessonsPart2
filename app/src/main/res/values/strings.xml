@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidLessonsPart2</string>
+
+
+    <!-- Main Activity -->
+    <string name="news_categories_title_text">News Categories</string>
+
+    <string name="city_weather_forecast_title">%1$s Weather Forecast</string>
+
+</resources>
