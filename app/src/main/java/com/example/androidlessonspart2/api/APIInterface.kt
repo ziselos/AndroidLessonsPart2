@@ -4,6 +4,7 @@ import com.example.androidlessonspart2.models.api.NewsByCategoryResponse
 import com.example.androidlessonspart2.models.api.uiModels.disney.DisneyCharactersModel
 import com.example.androidlessonspart2.models.api.weather.LocationWeatherResponse
 import com.example.androidlessonspart2.models.api.weather.search.City
+import com.example.androidlessonspart2.models.api.weather.search.SearchCityResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -25,6 +26,6 @@ interface APIInterface {
 
     // search weather forecast
     @GET("api/location/search")
-    suspend fun getSearchLocationWeather(@Query("query") query: String): Response<List<City>>
+    suspend fun getSearchLocationWeather(@Query("query") query: String): Response<SearchCityResponse>
 }
 

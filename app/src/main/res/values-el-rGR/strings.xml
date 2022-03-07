@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidLessonsPart2</string>
+    <string name="news_categories_title_text">Κατηγοίρες Νέων</string>
+    <string name="city_weather_forecast_title">%1$s Πρόγνωση Καιρού</string>
+    <string name="demo_screen_title">Τίτλος</string>
+    <string name="demo_screen_subtitle">Υπότιτλος</string>
+    <string name="demo_screen_main_text">Αυτό είναι το κύριο κείμενο της οθόνης μας.</string>
+    <string name="demo_screen_toast_message">Αυτό είναι το ένα τυχαίο μήμυμα.</string>
+</resources>

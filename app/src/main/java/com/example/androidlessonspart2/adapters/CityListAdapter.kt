@@ -26,7 +26,7 @@ class CityListAdapter(private val onCityClickListener: (City) -> Unit) :
 
     override fun getItemCount(): Int = cityList.size
 
-    fun setList(list: ArrayList<City>) {
+    fun setList(list: List<City>) {
         cityList.clear()
         cityList.addAll(list)
     }

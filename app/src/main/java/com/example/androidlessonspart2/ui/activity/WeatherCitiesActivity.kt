@@ -41,7 +41,7 @@ class WeatherCitiesActivity : AppCompatActivity() {
         binding.apply {
             recyclerView.adapter = adapter
             citySearch.onTextChanged {
-                fetchCities(it)
+                    fetchCities(it)
             }
         }
     }
@@ -57,8 +57,8 @@ class WeatherCitiesActivity : AppCompatActivity() {
                 binding.loader.visibility = View.GONE
                 if (response?.isSuccessful == true) {
                     // update the UI
-                    val cityResults = response.body() as ArrayList<City>? ?: arrayListOf()
-                    adapter.setList(cityResults)
+                    val cityResults =  response.body()?.mapToCityList()
+                    adapter.setList(cityResults ?: listOf())
                     adapter.notifyDataSetChanged()
                 } else {
                     // error handling
@@ -74,7 +74,10 @@ fun AppCompatEditText.onTextChanged(textChanged: (String) -> Unit) {
         override fun afterTextChanged(s: Editable?) {}
         override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
         override fun onTextChanged(text: CharSequence?, start: Int, before: Int, count: Int) {
-            textChanged(text.toString())
+            if (text?.length ?: 0 > 5) {
+                textChanged(text.toString())
+            }
+
         }
     })
 }
