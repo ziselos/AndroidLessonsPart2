@@ -26,6 +26,14 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Τρίτη 21/12/2021" />
 
+        <CheckBox
+            android:id="@+id/cityCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/day"
+            app:layout_constraintTop_toTopOf="@+id/day"
+            app:layout_constraintBottom_toBottomOf="@+id/day"/>
+
         <LinearLayout
             android:id="@+id/infoLayout"
             android:layout_width="wrap_content"

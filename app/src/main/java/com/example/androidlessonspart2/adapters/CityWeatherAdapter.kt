@@ -5,12 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import coil.ImageLoader
 import coil.decode.SvgDecoder
 import coil.request.ImageRequest
 import com.example.androidlessonspart2.R
 import com.example.androidlessonspart2.models.api.weather.ConsolidatedWeather
+import com.example.androidlessonspart2.models.api.weather.search.City
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.holder_weather_day.*
 import java.util.*
@@ -33,8 +35,11 @@ class CityWeatherAdapter : RecyclerView.Adapter<CityWeatherAdapter.CityViewHolde
     override fun getItemCount(): Int = consolidatedWeatherList.size
 
     fun setList(list: ArrayList<ConsolidatedWeather>) {
+        val diffUtil = DiffCallback(consolidatedWeatherList, list)
+        val diffResults = DiffUtil.calculateDiff(diffUtil)
         consolidatedWeatherList.clear()
         consolidatedWeatherList.addAll(list)
+        diffResults.dispatchUpdatesTo(this)
     }
 
     class CityViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView),
@@ -53,6 +58,26 @@ class CityWeatherAdapter : RecyclerView.Adapter<CityWeatherAdapter.CityViewHolde
             val rnd = Random()
             return Color.argb(200, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
         }
+    }
+}
+
+//1
+ class DiffCallback(private val oldList: List<ConsolidatedWeather>, private val newList: List<ConsolidatedWeather>) : DiffUtil.Callback() {
+
+    override fun getOldListSize(): Int {
+        return oldList.size
+    }
+
+    override fun getNewListSize(): Int {
+       return newList.size
+    }
+
+    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
+        return oldList[oldItemPosition].id == newList[newItemPosition].id
+    }
+
+    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
+        return oldList[oldItemPosition].isSelected == newList[newItemPosition].isSelected
     }
 }
 

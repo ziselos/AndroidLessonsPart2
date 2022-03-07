@@ -17,7 +17,8 @@ data class ConsolidatedWeather(
     val weather_state_name: String,
     val wind_direction: Double,
     val wind_direction_compass: String,
-    val wind_speed: Double
+    val wind_speed: Double,
+    var isSelected: Boolean = false
 ) {
     fun getWeatherIcon(): String = IMAGE_URL.replace("{abbreviation}", weather_state_abbr)
 }
