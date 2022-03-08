@@ -57,6 +57,19 @@
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:textSize="@dimen/common_text_size_fourteen"/>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/diffUtilExample"
+            android:layout_width="@dimen/common_one_hundred_dp"
+            android:layout_height="wrap_content"
+            android:text="DiffUtils Example"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:backgroundTint="@color/teal_200"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textSize="@dimen/common_text_size_fourteen"/>
+
 
     </LinearLayout>
 

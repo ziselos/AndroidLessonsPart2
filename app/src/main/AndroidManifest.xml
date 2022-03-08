@@ -29,6 +29,7 @@
         <activity android:name=".ui.activity.DisneyCharactersActivity"/>
         <activity android:name=".ui.activity.WeatherCitiesActivity"/>
         <activity android:name=".ui.activity.WeatherForecastActivity"/>
+        <activity android:name=".ui.activity.DiffUtilExampleActivity"/>
     </application>
 
 </manifest>
