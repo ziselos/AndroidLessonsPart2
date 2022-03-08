@@ -13,6 +13,7 @@
     <string name="demo_screen_subtitle">Subtitle</string>
     <string name="demo_screen_main_text">This is tha main text on our screen.</string>
     <string name="demo_screen_toast_message">This is a random message.</string>
+    <string name="demo_screen_button_text">Click</string>
 
 
 </resources>

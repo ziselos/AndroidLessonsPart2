@@ -30,6 +30,7 @@
         <activity android:name=".ui.activity.WeatherCitiesActivity"/>
         <activity android:name=".ui.activity.WeatherForecastActivity"/>
         <activity android:name=".ui.activity.DiffUtilExampleActivity"/>
+        <activity android:name=".ui.activity.StringsExampleActivity"/>
     </application>
 
 </manifest>

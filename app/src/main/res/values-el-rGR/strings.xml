@@ -7,4 +7,5 @@
     <string name="demo_screen_subtitle">Υπότιτλος</string>
     <string name="demo_screen_main_text">Αυτό είναι το κύριο κείμενο της οθόνης μας.</string>
     <string name="demo_screen_toast_message">Αυτό είναι το ένα τυχαίο μήμυμα.</string>
+    <string name="demo_screen_button_text">Κλικ</string>
 </resources>

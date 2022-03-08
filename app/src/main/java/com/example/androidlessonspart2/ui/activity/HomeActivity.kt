@@ -43,6 +43,12 @@ class HomeActivity: AppCompatActivity() {
                     startActivity(it)
                 }
             }
+
+            stringsExample.setOnClickListener {
+                Intent(this@HomeActivity, StringsExampleActivity::class.java).also {
+                    startActivity(it)
+                }
+            }
         }
     }
 
