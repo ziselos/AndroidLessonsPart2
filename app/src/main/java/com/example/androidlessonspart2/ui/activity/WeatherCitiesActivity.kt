@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatEditText
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidlessonspart2.adapters.CityListAdapter
 import com.example.androidlessonspart2.api.APIInterface
 import com.example.androidlessonspart2.api.WeatherAPIClient

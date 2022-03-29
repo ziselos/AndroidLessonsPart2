@@ -58,7 +58,7 @@
             android:textSize="@dimen/common_text_size_fourteen"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/diffUtilExample"
+            android:id="@+id/diffUtil"
             android:layout_width="@dimen/common_one_hundred_dp"
             android:layout_height="wrap_content"
             android:text="DiffUtils Example"

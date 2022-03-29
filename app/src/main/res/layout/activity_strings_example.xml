@@ -17,7 +17,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/demo_screen_title"
-        tools:text="Title text"/>
+        android:layout_marginTop="@dimen/common_twenty_dp"
+        tools:text="@string/demo_screen_title"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/subTitle"

@@ -9,5 +9,4 @@ data class SearchCityResponseItem(
     fun mapToCity(): City {
         return City(title = this.title, woeid = this.woeid)
     }
-
 }

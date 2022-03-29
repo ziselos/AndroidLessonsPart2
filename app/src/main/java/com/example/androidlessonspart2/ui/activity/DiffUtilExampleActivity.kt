@@ -35,9 +35,8 @@ class DiffUtilExampleActivity : AppCompatActivity() {
         }
     }
 
-
     private fun initRecyclerView() {
-        adapter = CityListAdapter { }
+        adapter = CityListAdapter {}
         binding.apply {
             recyclerView.adapter = adapter
             adapter.setList(getDummyData())
@@ -49,7 +48,6 @@ class DiffUtilExampleActivity : AppCompatActivity() {
         val list = arrayListOf<City>()
         list.add(City(title = "Athens", woeid = 1))
         list.add(City(title = "London", woeid = 2))
-
         cities = list
         return list
     }

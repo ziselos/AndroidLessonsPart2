@@ -38,14 +38,15 @@ class HomeActivity: AppCompatActivity() {
                 }
             }
 
-            diffUtilExample.setOnClickListener {
+            diffUtil.setOnClickListener {
                 Intent(this@HomeActivity, DiffUtilExampleActivity::class.java).also {
                     startActivity(it)
                 }
             }
 
             stringsExample.setOnClickListener {
-                Intent(this@HomeActivity, StringsExampleActivity::class.java).also {
+                Intent(this@HomeActivity,
+                    StringsExampleActivity::class.java).also {
                     startActivity(it)
                 }
             }

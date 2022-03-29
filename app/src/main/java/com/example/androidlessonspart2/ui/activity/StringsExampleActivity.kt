@@ -20,7 +20,8 @@ class StringsExampleActivity : AppCompatActivity() {
     private fun initLayout() {
         binding.apply {
             button.setOnClickListener {
-                Toast.makeText(this@StringsExampleActivity, resources.getString(R.string.demo_screen_toast_message), Toast.LENGTH_LONG).show()
+                Toast.makeText(this@StringsExampleActivity,
+                    resources.getString(R.string.demo_screen_toast_message), Toast.LENGTH_LONG).show()
             }
         }
     }
