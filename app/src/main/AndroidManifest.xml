@@ -31,6 +31,7 @@
         <activity android:name=".ui.activity.WeatherForecastActivity"/>
         <activity android:name=".ui.activity.DiffUtilExampleActivity"/>
         <activity android:name=".ui.activity.StringsExampleActivity"/>
+        <activity android:name=".ui.activity.FragmentHostActivity"/>
     </application>
 
 </manifest>

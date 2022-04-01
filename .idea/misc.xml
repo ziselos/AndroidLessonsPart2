@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/layout/activity_diff_util_example.xml" value="0.4316123188405797" />
         <entry key="app/src/main/res/layout/activity_disney_character_details.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_disney_characters.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/activity_fragment_host.xml" value="0.5017605633802817" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.3177083333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_news_by_category.xml" value="0.4569746376811594" />
@@ -17,6 +18,9 @@
         <entry key="app/src/main/res/layout/activity_strings_example.xml" value="0.4316123188405797" />
         <entry key="app/src/main/res/layout/activity_weather_cities.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_weather_forecast.xml" value="0.442481884057971" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.5261538461538462" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.5261538461538462" />
+        <entry key="app/src/main/res/layout/fragment_third.xml" value="0.5130208333333334" />
         <entry key="app/src/main/res/layout/holder_disney_character_item.xml" value="0.33" />
         <entry key="app/src/main/res/layout/holder_news_by_category_item.xml" value="0.4569746376811594" />
         <entry key="app/src/main/res/layout/holder_news_category_rounded_item.xml" value="0.4470108695652174" />

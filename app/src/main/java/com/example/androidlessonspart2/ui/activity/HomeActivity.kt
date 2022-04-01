@@ -50,6 +50,12 @@ class HomeActivity: AppCompatActivity() {
                     startActivity(it)
                 }
             }
+
+            fragmentExample.setOnClickListener {
+                Intent(this@HomeActivity, FragmentHostActivity::class.java).also {
+                    startActivity(it)
+                }
+            }
         }
     }
 
