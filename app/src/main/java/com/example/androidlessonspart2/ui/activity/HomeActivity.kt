@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.fragment.app.FragmentActivity
 import com.example.androidlessonspart2.databinding.ActivityHomeBinding
 
 class HomeActivity: AppCompatActivity() {
@@ -53,6 +54,12 @@ class HomeActivity: AppCompatActivity() {
 
             fragmentExample.setOnClickListener {
                 Intent(this@HomeActivity, FragmentHostActivity::class.java).also {
+                    startActivity(it)
+                }
+            }
+
+            navControllerExample.setOnClickListener {
+                Intent(this@HomeActivity, NavControllerHostActivity::class.java).also {
                     startActivity(it)
                 }
             }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sales"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sales"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:strokeColor="@color/white"
+        app:backgroundTint="@color/french_gray"
+        app:strokeWidth="2dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textSize="@dimen/common_text_size_fourteen"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/refund"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Refund"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:strokeColor="@color/white"
+        app:backgroundTint="@color/french_gray"
+        app:strokeWidth="2dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textSize="@dimen/common_text_size_fourteen"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:strokeColor="@color/white"
+        app:backgroundTint="@color/french_gray"
+        app:strokeWidth="2dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textSize="@dimen/common_text_size_fourteen"/>
+
+
+
+</LinearLayout>

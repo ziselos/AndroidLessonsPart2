@@ -32,6 +32,7 @@
         <activity android:name=".ui.activity.DiffUtilExampleActivity"/>
         <activity android:name=".ui.activity.StringsExampleActivity"/>
         <activity android:name=".ui.activity.FragmentHostActivity"/>
+        <activity android:name=".ui.activity.NavControllerHostActivity"/>
     </application>
 
 </manifest>
