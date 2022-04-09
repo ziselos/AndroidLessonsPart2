@@ -6,12 +6,14 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.androidlessonspart2.R
 import com.example.androidlessonspart2.adapters.NewsByCategoryAdapter
 import com.example.androidlessonspart2.adapters.NewsCategory
 import com.example.androidlessonspart2.api.APIInterface
 import com.example.androidlessonspart2.api.NewsAPIClient
 import com.example.androidlessonspart2.databinding.ActivityNewsByCategoryBinding
 import com.example.androidlessonspart2.models.api.Data
+import com.example.androidlessonspart2.ui.fragments.NewsDetailsFragment
 import kotlinx.coroutines.*
 
 class NewsByCategoryActivity : AppCompatActivity() {
@@ -57,13 +59,26 @@ class NewsByCategoryActivity : AppCompatActivity() {
         Log.d("Test", "onResume called")
     }
 
+    override fun onBackPressed() {
+        if (supportFragmentManager.backStackEntryCount > 0) {
+            supportFragmentManager.popBackStack()
+        } else {
+            super.onBackPressed()
+        }
+    }
+
     private fun initRecyclerView() {
         binding.apply {
             adapter = NewsByCategoryAdapter(onItemClick = { article ->
-                Intent(this@NewsByCategoryActivity, NewsDetailsActivity::class.java).also {
-                    it.putExtra(ARTICLE_ARG, article)
-                    startActivity(it)
-                }
+//                Intent(this@NewsByCategoryActivity, NewsDetailsActivity::class.java).also {
+//                    it.putExtra(ARTICLE_ARG, article)
+//                    startActivity(it)
+//               }
+                // now we want to show article details on a fragment
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.fragmentContainer, NewsDetailsFragment.newInstance(article))
+                    .addToBackStack("")
+                    .commitAllowingStateLoss()
             })
             categoryArticlesRecyclerView.adapter = adapter
         }
